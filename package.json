@@ -1,0 +1,15 @@
+{
+    "name": "ignaciocartes.novel",
+    "title": "Novel",
+    "description": "Theme based on mac OS Terminal's Novel theme",
+    "homepage": "https://github.com/IgnacioCartes/novel-brackets-theme",
+    "version": "1.0.0",
+    "author": "Ignacio Cartes Wörner <ignacio.cartes.w@gmail.com> (https://github.com/IgnacioCartes)",
+    "license": "MIT",
+    "theme": {
+        "file": "theme.less",
+        "dark": false,
+        "addModeClass": true
+    },
+    "keywords": ["theme"]
+}

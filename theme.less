@@ -1,0 +1,124 @@
+/*
+ * Novel Theme
+ */
+
+/* Global variables */
+@background: #DFDBC3;
+@foreground: #3B2322;
+@selected: #C4C286;
+@bold: #7F2A19;
+
+/* Code Styling */
+.CodeMirror, .CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+    font-family: "Courier";
+    font-weight: 400;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: #FF00FF;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #000;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: #00FFFF;
+    }
+}
+
+.cm-variable, .cm-variable-2, .cm-variable-3, .cm-operator, .cm-meta, .cm-bracket {color: @foreground;}
+.cm-atom, .cm-string, .cm-string-2, .cm-hr {color: #00A6B2;}
+.cm-comment {color: #8F836B;}
+.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote {color: #5343B9;}
+.cm-def, .cm-property {color: #999900;}
+.cm-number, .cm-attribute, .cm-plus {color: #00A600;}
+.cm-minus {color: #C96032;}
+.cm-header {color: #C456A7;}
+.cm-link {color: #6071DB; text-decoration: none;}
+
+/* Extra CSS */
+
+.CodeMirror-searching {
+    background-color: #D9D598;
+    &.searching-current-match {
+        background-color: #EBC494;
+    }
+}
+
+.CodeMirror-cursor {
+    border-left: 2px solid @foreground !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror-linenumber {
+    color: #766E5E;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: @selected;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+    background: @selected;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    background: #D1CBAE;
+}
+
+.quick-view-highlight {
+    background: #D1CBAE;
+}
+
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+    /* Ensure visibility against gray inline editor background */
+    background-color: #D6C2A7;
+    color: @foreground !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 2px solid @foreground;
+}
+
+.CodeMirror-foldgutter-open:after {
+    color: #63635E;
+}
+.CodeMirror-foldgutter-folded:after {
+    color: #A8A7A0;
+}
+
+.CodeMirror.over-gutter, .CodeMirror-activeline {
+    .CodeMirror-foldgutter-open:after {
+        color: #807E79;
+    }
+}
+
+.CodeMirror-foldmarker {
+    border-color: @foreground;
+    color: #E6E1C8;
+    background-color: #999476;
+}
+
+/* Non-editor styling */
+
+.image-view,
+.not-editor {
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @foreground;
+}
